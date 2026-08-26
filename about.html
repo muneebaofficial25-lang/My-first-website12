@@ -1,95 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        .animate2{
-            animation:move 2s ease-in-out ;
+        * {
+            box-sizing: border-box;
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            opacity: 0.84;
+            display: block;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 85%;
+            max-width: 900px;
+            text-align: center;
+        }
+
         h1 {
-    animation: slideUp 2s ease;
-}
-@keyframes move {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.animate3{
-            animation:move 4s ease-in-out ;
+            color: red;
+            font-size: 45px;
+            animation: move 2s ease-in-out;
         }
- p{
-    animation: slideUp 2s ease;
-}
-@keyframes move {
-    from {
-        transform: translateY(60px);
-        opacity: 0;
-    }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-div img{
-        background:fixed;
-        height: 100vh;
-        width:120vw;
-      opacity:0.84; 
-      margin:0;
-      padding:0;
-    
-     }
-    
-     h1{
-        position:relative;
-        top:-290px;
-        right:-90px;
-        color:red;
-     }
-     p{
-        position:relative;
-        top:-270px;
-        right:-90px;
-        color:pink;
-     }
-     a{
-        position:relative;
-        right:-20px;
-        color:white;
-     }
-   
+        p {
+            color: pink;
+            font-size: 20px;
+            line-height: 1.6;
+            animation: move 3s ease-in-out;
+        }
 
- </style>
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(60px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* 📱 Mobile */
+        @media (max-width: 768px) {
+
+            .container img {
+                height: 100vh;
+            }
+
+            .content {
+                width: 90%;
+                top: 50%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
     <main>
-     <div>
-        <img src="image.png3.png" alt="" img>
-     <h1 class="animate2">Welcome  Beautiful Girl💕❣</h1>
-    <p class ="animate3"> 
-        Lucky to have a friend as sweet and crazy as you. 😂💞
-         **************
+        <div class="container">
 
-دوستی 💫
+            <img src="image.png3.png" alt="Beautiful background">
 
-دوستی ہمیشہ ہر روز بات کرنے یا ہر وقت ساتھ رہنے کا نام نہیں۔ کبھی کبھی یہ صرف اتنا جان لینا ہوتا ہے کہ کوئی ایسی دوست ہے جو آپ کی خاموشی کو بھی سمجھتی ہے، آپ کی عجیب و غریب باتوں پر بھی مسکراتی ہے، اور بغیر کسی وجہ کے آپ کے ساتھ کھڑی رہتی ہے۔ ایک سچی دوست عام سے لمحوں کو بھی ایسی خوبصورت یادوں میں بدل دیتی ہے جنہیں  <p>
-    <a href="index.html">پ ہمیشہ اپنے دل کے قریب رکھنا چاہتے ہیںآ🤍</a>
-</p>
-    
-    </p>
-   
+            <div class="content">
 
-     </div>
-</main>
-   </body>
+                <h1>Welcome Beautiful Girl 💕❣</h1>
+
+                <p>
+                    Lucky to have a friend as sweet and crazy as you. 😂💞
+                </p>
+
+                <p>
+                    **************
+                </p>
+
+                <p>
+                    دوستی 💫
+                </p>
+
+                <p>
+                    دوستی ہمیشہ ہر روز بات کرنے یا ہر وقت ساتھ رہنے کا نام نہیں۔
+                    کبھی کبھی یہ صرف اتنا جان لینا ہوتا ہے کہ کوئی ایسی دوست ہے
+                    جو آپ کی خاموشی کو بھی سمجھتی ہے، آپ کی عجیب و غریب باتوں پر
+                    بھی مسکراتی ہے، اور بغیر کسی وجہ کے آپ کے ساتھ کھڑی رہتی ہے۔
+                    ایک سچی دوست عام سے لمحوں کو بھی ایسی خوبصورت یادوں میں بدل
+                    دیتی ہے جنہیں ہمیشہ اپنے دل کے قریب رکھنا چاہتے ہیں۔ 🤍
+                </p>
+
+                <a href="index.html">پہلے صفحے پر واپس جائیں 🤍</a>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
 </html>
